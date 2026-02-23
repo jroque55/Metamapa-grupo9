@@ -1,0 +1,32 @@
+package ar.utn.ba.ddsi.apiadmi.models.entities.fuente;
+
+import ar.utn.ba.ddsi.apiadmi.utils.EnumTipoFuente;
+import jakarta.persistence.*;
+import lombok.Data;
+@Data
+@Entity
+public class Fuente {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id_fuente;
+    @Column(nullable = false)
+    private String nombre;
+    @Column(nullable = false)
+    private String url;
+    @Enumerated(EnumType.STRING)
+    @Column(nullable = false)
+    private EnumTipoFuente tipoFuente;
+
+    public Fuente(String nombre, String url, EnumTipoFuente tipoFuente) {
+        this.nombre = nombre;
+        this.url = url;
+        this.tipoFuente = tipoFuente;
+    }
+    public Fuente() {
+
+    }
+
+
+
+}

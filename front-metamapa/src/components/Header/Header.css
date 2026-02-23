@@ -1,0 +1,436 @@
+.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 1.5rem;
+  align-items: center;
+  padding: 1.2rem clamp(1rem, 4vw, 4rem);
+  background: var(--color-header-bg);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(148, 163, 184, 0.15);
+  box-shadow: 0 2px 10px rgba(2, 6, 23, 0.55);
+}
+
+
+.btn--ghost {
+  color: var(--color-text-dark);
+  background-color: var(--color-primary);
+}
+
+.app-header__brand {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.app-header__logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  background-color: rgb(185, 186, 187);
+  display: grid;
+  place-items: center;
+  font-size: 1.4rem;
+  box-shadow: 0 2px 10px rgba(15, 23, 42, 0.45);
+}
+
+.app-header__brand strong {
+  font-size: 1.2rem;
+}
+
+.app-header__brand small {
+  display: block;
+  color: var(--color-muted);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+}
+
+.app-header__search {
+  display: flex;
+  align-items: center;
+  /* El borde y fondo van en el contenedor, no en el input */
+  background: var(--color-header-bg, #ffffff); 
+  border-radius: 999px;
+  border: 1px solid #cbd5e1; /* Color de borde suave */
+  /* Padding asimétrico: más espacio a la izq para el texto, menos a la der para abrazar el botón */
+  padding: 0.25rem 0.25rem 0.25rem 1.2rem; 
+  width: 100%;          
+  max-width: 450px;     
+  margin: 0 auto;
+  transition: border-color 0.2s;
+}
+
+.app-header__search:focus-within {
+  border-color: var(--color-primary, #0f172a);
+  box-shadow: 0 0 0 2px rgba(15, 23, 42, 0.1);
+}
+
+.app-header__search input {
+  flex: 1; /* Ocupa todo el espacio disponible */
+  min-width: 0; /* CLAVE PARA MÓVILES: Evita que el input rompa el contenedor */
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 0.5rem 0;
+  color: var(--color-text);
+  font-size: 0.95rem;
+}
+
+.app-header__search input::placeholder {
+  color: #94a3b8;
+}
+
+.app-header__search button {
+  border: none;
+  border-radius: 999px;
+  padding: 0.6rem 1.2rem;
+  font-weight: 600;
+  background: var(--color-primary, #0f172a); /* Usando el azul oscuro de tu imagen */
+  color: white; /* Letra blanca para contrastar */
+  cursor: pointer;
+  transition: opacity 0.2s;
+  flex-shrink: 0; /* Evita que el botón se aplaste */
+}
+.app-header__actions {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.app-header__user {
+  align-self: center;
+  color: var(--color-text);
+  font-weight: 600;
+}
+.toggle-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Espacio entre el texto y el switch */
+  margin-left: 10px;
+  background: rgba(255, 255, 255, 0.5); /* Un fondito sutil opcional */
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: 1px solid rgba(0,0,0,0.1);
+  margin: auto;
+}
+
+.toggle-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  line-height: 1;
+  color: var(--color-text);
+  white-space: nowrap; /* Evita que el texto se rompa en dos líneas */
+}
+
+/* --- TUS ESTILOS DEL SWITCH (ligeramente ajustados) --- */
+
+/* El contenedor del switch mantiene su tamaño fijo solo para el botón */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px; /* Lo hice un poco más pequeño para que sea elegante */
+  height: 28px;
+  flex-shrink: 0; /* Evita que se aplaste si falta espacio */
+  margin-top: 5px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px; /* Ajustado al nuevo alto */
+  width: 20px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: var(--color-primary);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px var(--color-primary);
+}
+
+input:checked + .slider:before {
+  transform: translateX(22px); /* Ajuste del movimiento */
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.user-menu-container {
+  position: relative;
+  display: inline-block;
+}
+
+.user-menu-trigger {
+  background: none;
+  border: 1px solid #cbd5e1; /* Borde sutil */
+  border-radius: 40px; /* Redondeado, estilo "pill" */
+  padding: 6px 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background-color: white; /* Blanco limpio */
+}
+
+.user-menu-trigger:hover {
+  background-color: #f8fafc;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Sombra suave al hover */
+}
+
+.arrow-icon {
+  font-size: 0.7rem;
+  color: #64748b;
+  margin-left: 2px;
+}
+
+/* --- Dropdown, posicionado debajo del botón --- */
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + 8px); /* 8px de separación */
+  right: 0;
+  width: 220px;
+  background-color: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 
+              0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  padding: 8px 0; /* Padding vertical interno */
+  z-index: 100;
+  
+  /* Animación suave de entrada */
+  animation: fadeIn 0.2s ease-out forwards;
+  transform-origin: top right;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Los elementos dentro del menú */
+.dropdown-item {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 10px 16px;
+  font-size: 0.9rem;
+  color: var(--color-text);
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.dropdown-item:hover {
+  background-color: #f1f5f9;
+}
+
+/* Estilo especial para el botón de Salir */
+.dropdown-item--danger {
+  color: #ef4444; /* Rojo */
+  border-top: 1px solid #f1f5f9; /* Separador sutil arriba */
+}
+
+.dropdown-item--danger:hover {
+  background-color: #fef2f2; /* Fondo rojo muy clarito */
+}
+
+.dropdown-header-mobile {
+  display: none; /* Oculto en escritorio */
+  padding: 10px 16px;
+  font-size: 0.8rem;
+  color: #94a3b8;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.app-header__search button:hover {
+  opacity: 0.9;
+}
+
+.hamburger-menu {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 26px;
+  height: 18px;
+  background: transparent !important; /* Fuerza a quitar el fondo azul oscuro de tu imagen */
+  border: none !important;
+  box-shadow: none !important;
+  cursor: pointer;
+  padding: 0;
+  z-index: 100;
+  outline: none;
+}
+.hamburger-line {
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-text-dark, #333);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.hamburger-line {
+  width: 100%;
+  height: 2.5px;
+  background-color: var(--color-primary, #0f172a);
+  border-radius: 10px;
+}
+
+.mobile-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(15, 23, 42, 0.6); /* Fondo oscuro elegante */
+  backdrop-filter: blur(3px); /* Difumina lo que hay detrás */
+  z-index: 45; /* Debajo del header pero encima de la app */
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+}
+
+.mobile-overlay.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+.app-header.on-top {
+  z-index: 50; /* Mantiene el header sobre el overlay */
+}
+
+@media (max-width: 900px) {
+  .app-header {
+    grid-template-columns: auto 1fr auto; 
+    gap: 1rem;
+    padding: 0.8rem 1rem;
+  }
+
+  .app-header__brand div { display: none; }
+  .hamburger-menu { display: flex; }
+
+  /* Menú Desplegable Estilo "Tarjeta Elegante" */
+  .app-header__actions {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1.5rem 2rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+    border-top: 1px solid #f1f5f9;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    gap: 1.2rem;
+  }
+
+  .app-header__actions--mobile-open {
+    display: flex;
+    animation: slideDown 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+  /* Ajustes limpios dentro del menú móvil */
+  .toggle-wrapper { 
+    width: 100%; 
+    justify-content: space-between; 
+    margin: 0; 
+    padding: 1rem 0;
+    border-bottom: 1px solid #f1f5f9;
+    border-radius: 0;
+    background: transparent;
+  }
+  .toggle-label { display: inline-block; font-size: 1.05rem; font-weight: 500; color: #334155; }
+  
+  .app-header__user { display: inline-block; font-size: 1.05rem; }
+  .user-menu-trigger { 
+    width: 100%; 
+    justify-content: space-between; 
+    padding: 1rem 0; 
+    border: none;
+    border-bottom: 1px solid #f1f5f9;
+    border-radius: 0;
+  }
+  
+  .dropdown-menu {
+    position: static;
+    width: 100%;
+    box-shadow: none;
+    border: none;
+    padding-left: 0;
+    border-radius: 0;
+    animation: none;
+  }
+
+  .dropdown-item {
+    padding: 12px 0;
+    font-size: 1rem;
+    color: #475569;
+  }
+
+  /* Botón de ingresar a pantalla completa */
+  .login-btn-mobile {
+    width: 100%;
+    padding: 0.8rem;
+    text-align: center;
+    border-radius: 12px;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .app-header {
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem; 
+    padding: 0.8rem;
+  }
+  
+  .app-header__search {
+    margin: 0;
+    padding: 0.2rem 0.2rem 0.2rem 0.8rem; 
+    max-width: none;
+    flex: 1; 
+  }
+
+  .app-header__search input { font-size: 0.9rem; padding: 0.4rem 0; }
+  .app-header__search button { padding: 0.5rem 0.9rem; font-size: 0.85rem; }
+}

@@ -1,0 +1,110 @@
+.hero {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-xl, 32px);
+  padding: clamp(2rem, 5vw, 4.5rem);
+  background: var(--color-bg);
+  box-shadow: var(--shadow-soft);
+}
+
+.hero::before,
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+.hero::before {
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  inset: 6px;
+}
+
+.hero::after {
+  background: radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.08), transparent 55%);
+  opacity: 0.6;
+}
+
+.hero__badge {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 1.2rem;
+  border-radius: 999px;
+  background: #E8DCC2;
+  border: 1px solid rgba(93, 231, 196, 0.35);
+  font-size: 0.85rem;
+  color: var(--color-text);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.hero h1 {
+  position: relative;
+  font-size: clamp(2.5rem, 6vw, 3.75rem);
+  line-height: 1.05;
+  margin: 1rem 0 0.5rem;
+}
+
+.hero__slogan {
+  position: relative;
+  margin: 0 0 1.5rem;
+  font-size: clamp(1.1rem, 3vw, 1.5rem);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text);
+}
+
+.hero > p {
+  position: relative;
+  color: var(--color-text);
+  font-size: 1.05rem;
+  line-height: 1.7;
+  max-width: 640px;
+  margin-bottom: 1.75rem;
+}
+
+.hero__cta {
+  position: relative;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.hero__admin {
+  position: relative;
+  margin-top: 2rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.btn--admin {
+  background: linear-gradient(120deg, rgba(255, 215, 97, 0.2), rgba(255, 166, 0, 0.25));
+  border: 1px solid rgba(255, 193, 7, 0.5);
+  color: var(--color-text);
+  padding: 0.85rem 1.8rem;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn--admin:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 20px 35px rgba(255, 193, 7, 0.25);
+}
+
+@media (max-width: 768px) {
+  .hero__cta {
+    flex-direction: column;
+  }
+}
+
+/* Botón de búsqueda avanzada */
+.hero > .btn {
+  margin-top: 1rem;  
+}
