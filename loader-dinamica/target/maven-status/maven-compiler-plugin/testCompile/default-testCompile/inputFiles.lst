@@ -1,0 +1,8 @@
+/home/diego/IdeaProjects/MetaMapa-Grupo92/src/test/java/com/metamapa/controllers/ControladorContribucionesTest.java
+/home/diego/IdeaProjects/MetaMapa-Grupo92/src/test/java/com/metamapa/controllers/ControladorContribuyentesTest.java
+/home/diego/IdeaProjects/MetaMapa-Grupo92/src/test/java/com/metamapa/controllers/ControladorRevisionesTest.java
+/home/diego/IdeaProjects/MetaMapa-Grupo92/src/test/java/com/metamapa/controllers/ExportacionControllerTest.java
+/home/diego/IdeaProjects/MetaMapa-Grupo92/src/test/java/com/metamapa/domain/HechoTest.java
+/home/diego/IdeaProjects/MetaMapa-Grupo92/src/test/java/com/metamapa/integration/DatabaseIntegrationEndToEndTest.java
+/home/diego/IdeaProjects/MetaMapa-Grupo92/src/test/java/com/metamapa/repository/IContribucionesRepositoryIntegrationTest.java
+/home/diego/IdeaProjects/MetaMapa-Grupo92/src/test/java/com/metamapa/repository/IContribuyentesRepositoryIntegrationTest.java

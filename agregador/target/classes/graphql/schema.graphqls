@@ -1,0 +1,38 @@
+type Query {
+    obtenerCantidadHechosXProvincia(coleccion: String!): [EstadisticaColeccionHechosXProvinciaDTO]
+
+    obtenerCantidadDeHechosXCategoria: [EstadisticaCategoriaDTO]
+
+    obtenerCantidadDeHechoXProvinciaXCategoria(categoria: String!): [EstadisticaProviciaXCategoriaDTO]
+
+    obtenerCantidadDeHechosXHoraXCategoria(categoria: String!): [EstadisticaCantidadHoraCateDTO]
+
+    obtenerCantidadSpamEnSolicitudes: EstadisticaSolicitudesDTO
+
+    obtenerColecciones: [String]
+    obtenerProvincias: [String]
+    obtenerCategorias: [String]
+}
+
+type EstadisticaColeccionHechosXProvinciaDTO {
+    provincia: String
+    cantidad: Int
+}
+
+type EstadisticaCategoriaDTO {
+    categoria: String
+    cantidad: Int
+}
+type EstadisticaProviciaXCategoriaDTO {
+    provincia: String
+    cantidad: Int
+}
+type EstadisticaCantidadHoraCateDTO {
+    hora: Int
+    cantidad: Int
+}
+type EstadisticaSolicitudesDTO {
+    totalSolicitudes: Int
+    totalSpam: Int
+    porcentajeSpam: Float
+}

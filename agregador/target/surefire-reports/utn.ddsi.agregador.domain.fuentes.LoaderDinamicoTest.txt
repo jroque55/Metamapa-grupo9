@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: utn.ddsi.agregador.domain.fuentes.LoaderDinamicoTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.140 s -- in utn.ddsi.agregador.domain.fuentes.LoaderDinamicoTest

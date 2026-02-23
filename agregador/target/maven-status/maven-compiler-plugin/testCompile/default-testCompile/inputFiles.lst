@@ -1,0 +1,6 @@
+/home/diego/IdeaProjects/agregador-tp/src/test/java/utn/ddsi/agregador/AgregadorApplicationTests.java
+/home/diego/IdeaProjects/agregador-tp/src/test/java/utn/ddsi/agregador/domain/agregador/ActualizadorColeccionesTest.java
+/home/diego/IdeaProjects/agregador-tp/src/test/java/utn/ddsi/agregador/domain/agregador/ConsensoTests.java
+/home/diego/IdeaProjects/agregador-tp/src/test/java/utn/ddsi/agregador/domain/agregador/GestorDeSolicitudesTest.java
+/home/diego/IdeaProjects/agregador-tp/src/test/java/utn/ddsi/agregador/domain/agregador/NormalizadorTest.java
+/home/diego/IdeaProjects/agregador-tp/src/test/java/utn/ddsi/agregador/domain/fuentes/LoaderDinamicoTest.java

@@ -1,0 +1,94 @@
+type Query {
+    listarCategorias: [CategoriaOutPutDTO]
+    listarProvincias: [ProvinciaOutPutDTO]
+
+    listarHechosDeUnaColeccion(
+        coleccionID: ID!,
+        modoNavegacion: String,
+        categoria: String
+        fecha_reporte_desde: String
+        fecha_reporte_hasta: String
+        fecha_acontecimiento_desde: String
+        fecha_acontecimiento_hasta: String
+        provincia: String
+        q: String
+        fuenteTipo: String
+    ): ColeccionOutputDTO
+
+    listarColecciones(
+        titulo: String
+        descripcion: String
+        tipo_algoritmo: String
+        fuente_id: [String]
+    ): [ColeccionOutputDTO]
+
+    obtenerColeccionPorId(coleccionID: ID!): ColeccionOutputDTO
+
+    listarHechosSegun(
+        categoria: String
+        fecha_reporte_desde: String
+        fecha_reporte_hasta: String
+        fecha_acontecimiento_desde: String
+        fecha_acontecimiento_hasta: String
+        provincia: String
+        q: String
+        fuenteTipo: String
+        page: Int
+        size: Int
+    ): HechoPage
+
+    obtenerHecho (id: ID!): HechoOutputDTO
+}
+
+type CategoriaOutPutDTO {
+    nombre: String
+}
+
+type ProvinciaOutPutDTO {
+    nombre: String
+    pais: String
+}
+
+type ColeccionOutputDTO {
+    id_coleccion: ID
+    titulo: String
+    descripcion: String
+    fuentes: [String]
+    tipoDeAlgoritmo: String
+    cantidadHechos: Int
+    hechos: [HechoOutputDTO]
+    hechosConsensuados: [HechoOutputDTO]
+}
+
+type HechoOutputDTO {
+    id_hecho: ID
+    titulo: String
+    descripcion: String
+    fecha: String
+    fechaDeCarga: String
+    categoria: String
+    ubicacion: UbicacionOutputDTO
+    etiqueta: String
+    tipoHecho: String
+    fuente: String
+    adjuntos: [AdjuntoDTO]
+}
+
+type UbicacionOutputDTO {
+    id_ubicacion: ID
+    latitud: Float
+    longitud: Float
+    provincia: String
+    pais: String
+}
+
+type HechoPage {
+    content: [HechoOutputDTO]
+    totalPages: Int
+    totalElements: Int
+}
+
+type AdjuntoDTO {
+    url: String
+    tipoMedia: String
+}
