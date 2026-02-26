@@ -1,0 +1,20 @@
+[{
+  "_id": "actualizarResultadosEstadisticas",
+  "lockUntil": {
+    "$date": "2025-12-02T15:35:43.651Z"
+  },
+  "lockedAt": {
+    "$date": "2025-12-02T15:34:43.651Z"
+  },
+  "lockedBy": "DESKTOP-I15BTHO"
+},
+{
+  "_id": "actualizarResultados",
+  "lockUntil": {
+    "$date": "2026-02-24T00:40:24.096Z"
+  },
+  "lockedAt": {
+    "$date": "2026-02-24T00:30:24.096Z"
+  },
+  "lockedBy": "srv-d5ju1bn5r7bs73885fug-hibernate-7c7d49fddc-9cnn7"
+}]

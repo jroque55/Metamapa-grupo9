@@ -1,0 +1,7 @@
+[{
+  "_id": "singleton",
+  "lastUpdate": {
+    "$date": "2026-02-24T00:09:21.376Z"
+  },
+  "_class": "com.metamapa.Config.EstadisticaUpdateMarker"
+}]

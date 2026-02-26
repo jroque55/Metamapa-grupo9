@@ -1,0 +1,1830 @@
+[{
+  "_id": {
+    "$oid": "699cec3138d00d2fbb86fb2a"
+  },
+  "categorias": [
+    {
+      "categoria": "Tránsito",
+      "cantidad": {
+        "$numberLong": "16"
+      }
+    },
+    {
+      "categoria": "Clima",
+      "cantidad": {
+        "$numberLong": "7"
+      }
+    },
+    {
+      "categoria": "Eventos",
+      "cantidad": {
+        "$numberLong": "6"
+      }
+    },
+    {
+      "categoria": "Infraestructura",
+      "cantidad": {
+        "$numberLong": "6"
+      }
+    },
+    {
+      "categoria": "Inseguridad",
+      "cantidad": {
+        "$numberLong": "5"
+      }
+    },
+    {
+      "categoria": "Servicios",
+      "cantidad": {
+        "$numberLong": "2"
+      }
+    },
+    {
+      "categoria": "Naturaleza",
+      "cantidad": {
+        "$numberLong": "2"
+      }
+    },
+    {
+      "categoria": "Vialidad",
+      "cantidad": {
+        "$numberLong": "2"
+      }
+    },
+    {
+      "categoria": "Sismo",
+      "cantidad": {
+        "$numberLong": "2"
+      }
+    },
+    {
+      "categoria": "Ambiente",
+      "cantidad": {
+        "$numberLong": "2"
+      }
+    },
+    {
+      "categoria": "Comercio",
+      "cantidad": {
+        "$numberLong": "2"
+      }
+    },
+    {
+      "categoria": "Cultura",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    },
+    {
+      "categoria": "Incendio forestal",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    },
+    {
+      "categoria": "Turismo",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    },
+    {
+      "categoria": "Disturbios",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    },
+    {
+      "categoria": "Hurto",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    },
+    {
+      "categoria": "Accidente",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    },
+    {
+      "categoria": "Emergencia Medica",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    },
+    {
+      "categoria": "Protesta",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    },
+    {
+      "categoria": "Higiene",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    },
+    {
+      "categoria": "Comunidad",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    },
+    {
+      "categoria": "Mascotas",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    },
+    {
+      "categoria": "Convivencia",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    },
+    {
+      "categoria": "Vandalismo",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    },
+    {
+      "categoria": "Automovilismo",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    },
+    {
+      "categoria": "Aeropuerto",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    }
+  ],
+  "resultado": {
+    "categoria": "Tránsito",
+    "cantidad": {
+      "$numberLong": "16"
+    }
+  },
+  "tipoEstadistica": "MAXCATEGORIACONHECHOS",
+  "discriminante": {
+    "tipoDiscriminante": "SIN",
+    "valor": ""
+  },
+  "_class": "estadistica_catMax"
+},
+{
+  "_id": {
+    "$oid": "699cec3138d00d2fbb86fb2e"
+  },
+  "provincias": [
+    {
+      "provincia": "La Pampa",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    },
+    {
+      "provincia": "Ciudad Autonoma de Buenos Aires",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    }
+  ],
+  "resultado": {
+    "provincia": "La Pampa",
+    "cantidad": {
+      "$numberLong": "1"
+    }
+  },
+  "tipoEstadistica": "MAXPROVINCIASEGUNCONCATEGORIA",
+  "discriminante": {
+    "tipoDiscriminante": "CATEGORIA",
+    "valor": "Servicios"
+  },
+  "_class": "estadistica_maxProvCat"
+},
+{
+  "_id": {
+    "$oid": "699cec3138d00d2fbb86fb2f"
+  },
+  "cantidadXHoras": [
+    {
+      "hora": 20,
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    }
+  ],
+  "resultado": {
+    "hora": 20,
+    "cantidad": {
+      "$numberLong": "1"
+    }
+  },
+  "tipoEstadistica": "MAXHORASEGUNCATEGORIA",
+  "discriminante": {
+    "tipoDiscriminante": "CATEGORIA",
+    "valor": "Incendio forestal"
+  },
+  "_class": "estadistica_horaXCategoria"
+},
+{
+  "_id": {
+    "$oid": "699cec3138d00d2fbb86fb32"
+  },
+  "provincias": [
+    {
+      "provincia": "Santa Cruz",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    }
+  ],
+  "resultado": {
+    "provincia": "Santa Cruz",
+    "cantidad": {
+      "$numberLong": "1"
+    }
+  },
+  "tipoEstadistica": "MAXPROVINCIASEGUNCONCATEGORIA",
+  "discriminante": {
+    "tipoDiscriminante": "CATEGORIA",
+    "valor": "Turismo"
+  },
+  "_class": "estadistica_maxProvCat"
+},
+{
+  "_id": {
+    "$oid": "699cec3138d00d2fbb86fb35"
+  },
+  "cantidadXHoras": [
+    {
+      "hora": 20,
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    },
+    {
+      "hora": 10,
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    }
+  ],
+  "resultado": {
+    "hora": 20,
+    "cantidad": {
+      "$numberLong": "1"
+    }
+  },
+  "tipoEstadistica": "MAXHORASEGUNCATEGORIA",
+  "discriminante": {
+    "tipoDiscriminante": "CATEGORIA",
+    "valor": "Naturaleza"
+  },
+  "_class": "estadistica_horaXCategoria"
+},
+{
+  "_id": {
+    "$oid": "699cec3138d00d2fbb86fb39"
+  },
+  "cantidadXHoras": [
+    {
+      "hora": 20,
+      "cantidad": {
+        "$numberLong": "5"
+      }
+    }
+  ],
+  "resultado": {
+    "hora": 20,
+    "cantidad": {
+      "$numberLong": "5"
+    }
+  },
+  "tipoEstadistica": "MAXHORASEGUNCATEGORIA",
+  "discriminante": {
+    "tipoDiscriminante": "CATEGORIA",
+    "valor": "Inseguridad"
+  },
+  "_class": "estadistica_horaXCategoria"
+},
+{
+  "_id": {
+    "$oid": "699cec3138d00d2fbb86fb3a"
+  },
+  "provincias": [
+    {
+      "provincia": "Buenos Aires",
+      "cantidad": {
+        "$numberLong": "3"
+      }
+    },
+    {
+      "provincia": "Ciudad Autonoma de Buenos Aires",
+      "cantidad": {
+        "$numberLong": "2"
+      }
+    }
+  ],
+  "resultado": {
+    "provincia": "Buenos Aires",
+    "cantidad": {
+      "$numberLong": "3"
+    }
+  },
+  "tipoEstadistica": "MAXPROVINCIASEGUNCONCATEGORIA",
+  "discriminante": {
+    "tipoDiscriminante": "CATEGORIA",
+    "valor": "Inseguridad"
+  },
+  "_class": "estadistica_maxProvCat"
+},
+{
+  "_id": {
+    "$oid": "699cec3138d00d2fbb86fb3f"
+  },
+  "cantidadXHoras": [
+    {
+      "hora": 20,
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    }
+  ],
+  "resultado": {
+    "hora": 20,
+    "cantidad": {
+      "$numberLong": "1"
+    }
+  },
+  "tipoEstadistica": "MAXHORASEGUNCATEGORIA",
+  "discriminante": {
+    "tipoDiscriminante": "CATEGORIA",
+    "valor": "Hurto"
+  },
+  "_class": "estadistica_horaXCategoria"
+},
+{
+  "_id": {
+    "$oid": "699cec3138d00d2fbb86fb48"
+  },
+  "provincias": [
+    {
+      "provincia": "Neuquen",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    },
+    {
+      "provincia": "Salta",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    }
+  ],
+  "resultado": {
+    "provincia": "Neuquen",
+    "cantidad": {
+      "$numberLong": "1"
+    }
+  },
+  "tipoEstadistica": "MAXPROVINCIASEGUNCONCATEGORIA",
+  "discriminante": {
+    "tipoDiscriminante": "CATEGORIA",
+    "valor": "Vialidad"
+  },
+  "_class": "estadistica_maxProvCat"
+},
+{
+  "_id": {
+    "$oid": "699cec3138d00d2fbb86fb49"
+  },
+  "cantidadXHoras": [
+    {
+      "hora": 20,
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    }
+  ],
+  "resultado": {
+    "hora": 20,
+    "cantidad": {
+      "$numberLong": "1"
+    }
+  },
+  "tipoEstadistica": "MAXHORASEGUNCATEGORIA",
+  "discriminante": {
+    "tipoDiscriminante": "CATEGORIA",
+    "valor": "Protesta"
+  },
+  "_class": "estadistica_horaXCategoria"
+},
+{
+  "_id": {
+    "$oid": "699cec3138d00d2fbb86fb4d"
+  },
+  "cantidadXHoras": [
+    {
+      "hora": 20,
+      "cantidad": {
+        "$numberLong": "2"
+      }
+    }
+  ],
+  "resultado": {
+    "hora": 20,
+    "cantidad": {
+      "$numberLong": "2"
+    }
+  },
+  "tipoEstadistica": "MAXHORASEGUNCATEGORIA",
+  "discriminante": {
+    "tipoDiscriminante": "CATEGORIA",
+    "valor": "Sismo"
+  },
+  "_class": "estadistica_horaXCategoria"
+},
+{
+  "_id": {
+    "$oid": "699cec3138d00d2fbb86fb4e"
+  },
+  "provincias": [
+    {
+      "provincia": "EXTERIOR",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    },
+    {
+      "provincia": "San Juan",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    }
+  ],
+  "resultado": {
+    "provincia": "EXTERIOR",
+    "cantidad": {
+      "$numberLong": "1"
+    }
+  },
+  "tipoEstadistica": "MAXPROVINCIASEGUNCONCATEGORIA",
+  "discriminante": {
+    "tipoDiscriminante": "CATEGORIA",
+    "valor": "Sismo"
+  },
+  "_class": "estadistica_maxProvCat"
+},
+{
+  "_id": {
+    "$oid": "699cec3138d00d2fbb86fb4f"
+  },
+  "cantidadXHoras": [
+    {
+      "hora": 20,
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    }
+  ],
+  "resultado": {
+    "hora": 20,
+    "cantidad": {
+      "$numberLong": "1"
+    }
+  },
+  "tipoEstadistica": "MAXHORASEGUNCATEGORIA",
+  "discriminante": {
+    "tipoDiscriminante": "CATEGORIA",
+    "valor": "Comunidad"
+  },
+  "_class": "estadistica_horaXCategoria"
+},
+{
+  "_id": {
+    "$oid": "699cec3138d00d2fbb86fb56"
+  },
+  "provincias": [
+    {
+      "provincia": "Santa Fe",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    }
+  ],
+  "resultado": {
+    "provincia": "Santa Fe",
+    "cantidad": {
+      "$numberLong": "1"
+    }
+  },
+  "tipoEstadistica": "MAXPROVINCIASEGUNCONCATEGORIA",
+  "discriminante": {
+    "tipoDiscriminante": "CATEGORIA",
+    "valor": "Convivencia"
+  },
+  "_class": "estadistica_maxProvCat"
+},
+{
+  "_id": {
+    "$oid": "699cec3138d00d2fbb86fb59"
+  },
+  "cantidadXHoras": [
+    {
+      "hora": 20,
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    }
+  ],
+  "resultado": {
+    "hora": 20,
+    "cantidad": {
+      "$numberLong": "1"
+    }
+  },
+  "tipoEstadistica": "MAXHORASEGUNCATEGORIA",
+  "discriminante": {
+    "tipoDiscriminante": "CATEGORIA",
+    "valor": "Vandalismo"
+  },
+  "_class": "estadistica_horaXCategoria"
+},
+{
+  "_id": {
+    "$oid": "699cec3138d00d2fbb86fb24"
+  },
+  "provincias": [
+    {
+      "provincia": "EXTERIOR",
+      "cantidad": {
+        "$numberLong": "6"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "cantidad": {
+        "$numberLong": "4"
+      }
+    },
+    {
+      "provincia": "Ciudad Autonoma de Buenos Aires",
+      "cantidad": {
+        "$numberLong": "4"
+      }
+    },
+    {
+      "provincia": "La Pampa",
+      "cantidad": {
+        "$numberLong": "2"
+      }
+    },
+    {
+      "provincia": "La Rioja",
+      "cantidad": {
+        "$numberLong": "2"
+      }
+    },
+    {
+      "provincia": "Santa Cruz",
+      "cantidad": {
+        "$numberLong": "2"
+      }
+    },
+    {
+      "provincia": "Catamarca",
+      "cantidad": {
+        "$numberLong": "2"
+      }
+    },
+    {
+      "provincia": "Chubut",
+      "cantidad": {
+        "$numberLong": "2"
+      }
+    }
+  ],
+  "resultado": {
+    "provincia": "EXTERIOR",
+    "cantidad": {
+      "$numberLong": "6"
+    }
+  },
+  "tipoEstadistica": "MAXPROVINCIADEUNACOLECCION",
+  "discriminante": {
+    "tipoDiscriminante": "COLECCION",
+    "valor": "Cualquier cosa que entre dos fechas"
+  },
+  "_class": "estadistica_maxProv"
+},
+{
+  "_id": {
+    "$oid": "699cec3138d00d2fbb86fb2b"
+  },
+  "cantidadXHoras": [
+    {
+      "hora": 20,
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    }
+  ],
+  "resultado": {
+    "hora": 20,
+    "cantidad": {
+      "$numberLong": "1"
+    }
+  },
+  "tipoEstadistica": "MAXHORASEGUNCATEGORIA",
+  "discriminante": {
+    "tipoDiscriminante": "CATEGORIA",
+    "valor": "Cultura"
+  },
+  "_class": "estadistica_horaXCategoria"
+},
+{
+  "_id": {
+    "$oid": "699cec3138d00d2fbb86fb2c"
+  },
+  "provincias": [
+    {
+      "provincia": "Buenos Aires",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    }
+  ],
+  "resultado": {
+    "provincia": "Buenos Aires",
+    "cantidad": {
+      "$numberLong": "1"
+    }
+  },
+  "tipoEstadistica": "MAXPROVINCIASEGUNCONCATEGORIA",
+  "discriminante": {
+    "tipoDiscriminante": "CATEGORIA",
+    "valor": "Cultura"
+  },
+  "_class": "estadistica_maxProvCat"
+},
+{
+  "_id": {
+    "$oid": "699cec3138d00d2fbb86fb2d"
+  },
+  "cantidadXHoras": [
+    {
+      "hora": 20,
+      "cantidad": {
+        "$numberLong": "2"
+      }
+    }
+  ],
+  "resultado": {
+    "hora": 20,
+    "cantidad": {
+      "$numberLong": "2"
+    }
+  },
+  "tipoEstadistica": "MAXHORASEGUNCATEGORIA",
+  "discriminante": {
+    "tipoDiscriminante": "CATEGORIA",
+    "valor": "Servicios"
+  },
+  "_class": "estadistica_horaXCategoria"
+},
+{
+  "_id": {
+    "$oid": "699cec3138d00d2fbb86fb31"
+  },
+  "cantidadXHoras": [
+    {
+      "hora": 20,
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    }
+  ],
+  "resultado": {
+    "hora": 20,
+    "cantidad": {
+      "$numberLong": "1"
+    }
+  },
+  "tipoEstadistica": "MAXHORASEGUNCATEGORIA",
+  "discriminante": {
+    "tipoDiscriminante": "CATEGORIA",
+    "valor": "Turismo"
+  },
+  "_class": "estadistica_horaXCategoria"
+},
+{
+  "_id": {
+    "$oid": "699cec3138d00d2fbb86fb33"
+  },
+  "cantidadXHoras": [
+    {
+      "hora": 20,
+      "cantidad": {
+        "$numberLong": "6"
+      }
+    }
+  ],
+  "resultado": {
+    "hora": 20,
+    "cantidad": {
+      "$numberLong": "6"
+    }
+  },
+  "tipoEstadistica": "MAXHORASEGUNCATEGORIA",
+  "discriminante": {
+    "tipoDiscriminante": "CATEGORIA",
+    "valor": "Eventos"
+  },
+  "_class": "estadistica_horaXCategoria"
+},
+{
+  "_id": {
+    "$oid": "699cec3138d00d2fbb86fb3b"
+  },
+  "cantidadXHoras": [
+    {
+      "hora": 20,
+      "cantidad": {
+        "$numberLong": "7"
+      }
+    }
+  ],
+  "resultado": {
+    "hora": 20,
+    "cantidad": {
+      "$numberLong": "7"
+    }
+  },
+  "tipoEstadistica": "MAXHORASEGUNCATEGORIA",
+  "discriminante": {
+    "tipoDiscriminante": "CATEGORIA",
+    "valor": "Clima"
+  },
+  "_class": "estadistica_horaXCategoria"
+},
+{
+  "_id": {
+    "$oid": "699cec3138d00d2fbb86fb3d"
+  },
+  "cantidadXHoras": [
+    {
+      "hora": 20,
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    }
+  ],
+  "resultado": {
+    "hora": 20,
+    "cantidad": {
+      "$numberLong": "1"
+    }
+  },
+  "tipoEstadistica": "MAXHORASEGUNCATEGORIA",
+  "discriminante": {
+    "tipoDiscriminante": "CATEGORIA",
+    "valor": "Disturbios"
+  },
+  "_class": "estadistica_horaXCategoria"
+},
+{
+  "_id": {
+    "$oid": "699cec3138d00d2fbb86fb40"
+  },
+  "provincias": [
+    {
+      "provincia": "Ciudad Autonoma de Buenos Aires",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    }
+  ],
+  "resultado": {
+    "provincia": "Ciudad Autonoma de Buenos Aires",
+    "cantidad": {
+      "$numberLong": "1"
+    }
+  },
+  "tipoEstadistica": "MAXPROVINCIASEGUNCONCATEGORIA",
+  "discriminante": {
+    "tipoDiscriminante": "CATEGORIA",
+    "valor": "Hurto"
+  },
+  "_class": "estadistica_maxProvCat"
+},
+{
+  "_id": {
+    "$oid": "699cec3138d00d2fbb86fb41"
+  },
+  "cantidadXHoras": [
+    {
+      "hora": 20,
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    }
+  ],
+  "resultado": {
+    "hora": 20,
+    "cantidad": {
+      "$numberLong": "1"
+    }
+  },
+  "tipoEstadistica": "MAXHORASEGUNCATEGORIA",
+  "discriminante": {
+    "tipoDiscriminante": "CATEGORIA",
+    "valor": "Accidente"
+  },
+  "_class": "estadistica_horaXCategoria"
+},
+{
+  "_id": {
+    "$oid": "699cec3138d00d2fbb86fb42"
+  },
+  "provincias": [
+    {
+      "provincia": "Ciudad Autonoma de Buenos Aires",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    }
+  ],
+  "resultado": {
+    "provincia": "Ciudad Autonoma de Buenos Aires",
+    "cantidad": {
+      "$numberLong": "1"
+    }
+  },
+  "tipoEstadistica": "MAXPROVINCIASEGUNCONCATEGORIA",
+  "discriminante": {
+    "tipoDiscriminante": "CATEGORIA",
+    "valor": "Accidente"
+  },
+  "_class": "estadistica_maxProvCat"
+},
+{
+  "_id": {
+    "$oid": "699cec3138d00d2fbb86fb43"
+  },
+  "cantidadXHoras": [
+    {
+      "hora": 20,
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    }
+  ],
+  "resultado": {
+    "hora": 20,
+    "cantidad": {
+      "$numberLong": "1"
+    }
+  },
+  "tipoEstadistica": "MAXHORASEGUNCATEGORIA",
+  "discriminante": {
+    "tipoDiscriminante": "CATEGORIA",
+    "valor": "Emergencia Medica"
+  },
+  "_class": "estadistica_horaXCategoria"
+},
+{
+  "_id": {
+    "$oid": "699cec3138d00d2fbb86fb44"
+  },
+  "provincias": [
+    {
+      "provincia": "Ciudad Autonoma de Buenos Aires",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    }
+  ],
+  "resultado": {
+    "provincia": "Ciudad Autonoma de Buenos Aires",
+    "cantidad": {
+      "$numberLong": "1"
+    }
+  },
+  "tipoEstadistica": "MAXPROVINCIASEGUNCONCATEGORIA",
+  "discriminante": {
+    "tipoDiscriminante": "CATEGORIA",
+    "valor": "Emergencia Medica"
+  },
+  "_class": "estadistica_maxProvCat"
+},
+{
+  "_id": {
+    "$oid": "699cec3138d00d2fbb86fb46"
+  },
+  "provincias": [
+    {
+      "provincia": "Ciudad Autonoma de Buenos Aires",
+      "cantidad": {
+        "$numberLong": "3"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "cantidad": {
+        "$numberLong": "2"
+      }
+    },
+    {
+      "provincia": "Mendoza",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    }
+  ],
+  "resultado": {
+    "provincia": "Ciudad Autonoma de Buenos Aires",
+    "cantidad": {
+      "$numberLong": "3"
+    }
+  },
+  "tipoEstadistica": "MAXPROVINCIASEGUNCONCATEGORIA",
+  "discriminante": {
+    "tipoDiscriminante": "CATEGORIA",
+    "valor": "Infraestructura"
+  },
+  "_class": "estadistica_maxProvCat"
+},
+{
+  "_id": {
+    "$oid": "699cec3138d00d2fbb86fb47"
+  },
+  "cantidadXHoras": [
+    {
+      "hora": 20,
+      "cantidad": {
+        "$numberLong": "2"
+      }
+    }
+  ],
+  "resultado": {
+    "hora": 20,
+    "cantidad": {
+      "$numberLong": "2"
+    }
+  },
+  "tipoEstadistica": "MAXHORASEGUNCATEGORIA",
+  "discriminante": {
+    "tipoDiscriminante": "CATEGORIA",
+    "valor": "Vialidad"
+  },
+  "_class": "estadistica_horaXCategoria"
+},
+{
+  "_id": {
+    "$oid": "699cec3138d00d2fbb86fb4a"
+  },
+  "provincias": [
+    {
+      "provincia": "Ciudad Autonoma de Buenos Aires",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    }
+  ],
+  "resultado": {
+    "provincia": "Ciudad Autonoma de Buenos Aires",
+    "cantidad": {
+      "$numberLong": "1"
+    }
+  },
+  "tipoEstadistica": "MAXPROVINCIASEGUNCONCATEGORIA",
+  "discriminante": {
+    "tipoDiscriminante": "CATEGORIA",
+    "valor": "Protesta"
+  },
+  "_class": "estadistica_maxProvCat"
+},
+{
+  "_id": {
+    "$oid": "699cec3138d00d2fbb86fb52"
+  },
+  "provincias": [
+    {
+      "provincia": "Ciudad Autonoma de Buenos Aires",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    }
+  ],
+  "resultado": {
+    "provincia": "Ciudad Autonoma de Buenos Aires",
+    "cantidad": {
+      "$numberLong": "1"
+    }
+  },
+  "tipoEstadistica": "MAXPROVINCIASEGUNCONCATEGORIA",
+  "discriminante": {
+    "tipoDiscriminante": "CATEGORIA",
+    "valor": "Mascotas"
+  },
+  "_class": "estadistica_maxProvCat"
+},
+{
+  "_id": {
+    "$oid": "699cec3138d00d2fbb86fb54"
+  },
+  "provincias": [
+    {
+      "provincia": "Cordoba",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    },
+    {
+      "provincia": "San Luis",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    }
+  ],
+  "resultado": {
+    "provincia": "Cordoba",
+    "cantidad": {
+      "$numberLong": "1"
+    }
+  },
+  "tipoEstadistica": "MAXPROVINCIASEGUNCONCATEGORIA",
+  "discriminante": {
+    "tipoDiscriminante": "CATEGORIA",
+    "valor": "Ambiente"
+  },
+  "_class": "estadistica_maxProvCat"
+},
+{
+  "_id": {
+    "$oid": "699cec3138d00d2fbb86fb57"
+  },
+  "cantidadXHoras": [
+    {
+      "hora": 20,
+      "cantidad": {
+        "$numberLong": "2"
+      }
+    }
+  ],
+  "resultado": {
+    "hora": 20,
+    "cantidad": {
+      "$numberLong": "2"
+    }
+  },
+  "tipoEstadistica": "MAXHORASEGUNCATEGORIA",
+  "discriminante": {
+    "tipoDiscriminante": "CATEGORIA",
+    "valor": "Comercio"
+  },
+  "_class": "estadistica_horaXCategoria"
+},
+{
+  "_id": {
+    "$oid": "699cec3138d00d2fbb86fb25"
+  },
+  "provincias": [
+    {
+      "provincia": "Ciudad Autonoma de Buenos Aires",
+      "cantidad": {
+        "$numberLong": "8"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "cantidad": {
+        "$numberLong": "5"
+      }
+    },
+    {
+      "provincia": "EXTERIOR",
+      "cantidad": {
+        "$numberLong": "2"
+      }
+    },
+    {
+      "provincia": "La Pampa",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    },
+    {
+      "provincia": "La Rioja",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    },
+    {
+      "provincia": "Santa Cruz",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    },
+    {
+      "provincia": "Catamarca",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    },
+    {
+      "provincia": "Chubut",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    }
+  ],
+  "resultado": {
+    "provincia": "Ciudad Autonoma de Buenos Aires",
+    "cantidad": {
+      "$numberLong": "8"
+    }
+  },
+  "tipoEstadistica": "MAXPROVINCIADEUNACOLECCION",
+  "discriminante": {
+    "tipoDiscriminante": "COLECCION",
+    "valor": "Goles de Argentina"
+  },
+  "_class": "estadistica_maxProv"
+},
+{
+  "_id": {
+    "$oid": "699cec3138d00d2fbb86fb27"
+  },
+  "provincias": [
+    {
+      "provincia": "Ciudad Autonoma de Buenos Aires",
+      "cantidad": {
+        "$numberLong": "12"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "cantidad": {
+        "$numberLong": "3"
+      }
+    },
+    {
+      "provincia": "Tucuman",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    }
+  ],
+  "resultado": {
+    "provincia": "Ciudad Autonoma de Buenos Aires",
+    "cantidad": {
+      "$numberLong": "12"
+    }
+  },
+  "tipoEstadistica": "MAXPROVINCIADEUNACOLECCION",
+  "discriminante": {
+    "tipoDiscriminante": "COLECCION",
+    "valor": "Hechos de transito"
+  },
+  "_class": "estadistica_maxProv"
+},
+{
+  "_id": {
+    "$oid": "699cec3138d00d2fbb86fb29"
+  },
+  "tipoEstadistica": "MAXPROVINCIADEUNACOLECCION",
+  "discriminante": {
+    "tipoDiscriminante": "COLECCION",
+    "valor": "Incidentes en la via pública "
+  },
+  "_class": "estadistica_maxProv"
+},
+{
+  "_id": {
+    "$oid": "699cec3138d00d2fbb86fb30"
+  },
+  "provincias": [
+    {
+      "provincia": "La Rioja",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    }
+  ],
+  "resultado": {
+    "provincia": "La Rioja",
+    "cantidad": {
+      "$numberLong": "1"
+    }
+  },
+  "tipoEstadistica": "MAXPROVINCIASEGUNCONCATEGORIA",
+  "discriminante": {
+    "tipoDiscriminante": "CATEGORIA",
+    "valor": "Incendio forestal"
+  },
+  "_class": "estadistica_maxProvCat"
+},
+{
+  "_id": {
+    "$oid": "699cec3138d00d2fbb86fb36"
+  },
+  "provincias": [
+    {
+      "provincia": "Chubut",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    },
+    {
+      "provincia": "San Luis",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    }
+  ],
+  "resultado": {
+    "provincia": "Chubut",
+    "cantidad": {
+      "$numberLong": "1"
+    }
+  },
+  "tipoEstadistica": "MAXPROVINCIASEGUNCONCATEGORIA",
+  "discriminante": {
+    "tipoDiscriminante": "CATEGORIA",
+    "valor": "Naturaleza"
+  },
+  "_class": "estadistica_maxProvCat"
+},
+{
+  "_id": {
+    "$oid": "699cec3138d00d2fbb86fb37"
+  },
+  "cantidadXHoras": [
+    {
+      "hora": 20,
+      "cantidad": {
+        "$numberLong": "16"
+      }
+    }
+  ],
+  "resultado": {
+    "hora": 20,
+    "cantidad": {
+      "$numberLong": "16"
+    }
+  },
+  "tipoEstadistica": "MAXHORASEGUNCATEGORIA",
+  "discriminante": {
+    "tipoDiscriminante": "CATEGORIA",
+    "valor": "Tránsito"
+  },
+  "_class": "estadistica_horaXCategoria"
+},
+{
+  "_id": {
+    "$oid": "699cec3138d00d2fbb86fb3c"
+  },
+  "provincias": [
+    {
+      "provincia": "EXTERIOR",
+      "cantidad": {
+        "$numberLong": "3"
+      }
+    },
+    {
+      "provincia": "Chaco",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    },
+    {
+      "provincia": "Ciudad Autonoma de Buenos Aires",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    },
+    {
+      "provincia": "Tierra del Fuego, Antartida E Islas del Atlantico Sur",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    },
+    {
+      "provincia": "Formosa",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    }
+  ],
+  "resultado": {
+    "provincia": "EXTERIOR",
+    "cantidad": {
+      "$numberLong": "3"
+    }
+  },
+  "tipoEstadistica": "MAXPROVINCIASEGUNCONCATEGORIA",
+  "discriminante": {
+    "tipoDiscriminante": "CATEGORIA",
+    "valor": "Clima"
+  },
+  "_class": "estadistica_maxProvCat"
+},
+{
+  "_id": {
+    "$oid": "699cec3138d00d2fbb86fb3e"
+  },
+  "provincias": [
+    {
+      "provincia": "Ciudad Autonoma de Buenos Aires",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    }
+  ],
+  "resultado": {
+    "provincia": "Ciudad Autonoma de Buenos Aires",
+    "cantidad": {
+      "$numberLong": "1"
+    }
+  },
+  "tipoEstadistica": "MAXPROVINCIASEGUNCONCATEGORIA",
+  "discriminante": {
+    "tipoDiscriminante": "CATEGORIA",
+    "valor": "Disturbios"
+  },
+  "_class": "estadistica_maxProvCat"
+},
+{
+  "_id": {
+    "$oid": "699cec3138d00d2fbb86fb45"
+  },
+  "cantidadXHoras": [
+    {
+      "hora": 20,
+      "cantidad": {
+        "$numberLong": "6"
+      }
+    }
+  ],
+  "resultado": {
+    "hora": 20,
+    "cantidad": {
+      "$numberLong": "6"
+    }
+  },
+  "tipoEstadistica": "MAXHORASEGUNCATEGORIA",
+  "discriminante": {
+    "tipoDiscriminante": "CATEGORIA",
+    "valor": "Infraestructura"
+  },
+  "_class": "estadistica_horaXCategoria"
+},
+{
+  "_id": {
+    "$oid": "699cec3138d00d2fbb86fb4b"
+  },
+  "cantidadXHoras": [
+    {
+      "hora": 20,
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    }
+  ],
+  "resultado": {
+    "hora": 20,
+    "cantidad": {
+      "$numberLong": "1"
+    }
+  },
+  "tipoEstadistica": "MAXHORASEGUNCATEGORIA",
+  "discriminante": {
+    "tipoDiscriminante": "CATEGORIA",
+    "valor": "Higiene"
+  },
+  "_class": "estadistica_horaXCategoria"
+},
+{
+  "_id": {
+    "$oid": "699cec3138d00d2fbb86fb4c"
+  },
+  "provincias": [
+    {
+      "provincia": "Buenos Aires",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    }
+  ],
+  "resultado": {
+    "provincia": "Buenos Aires",
+    "cantidad": {
+      "$numberLong": "1"
+    }
+  },
+  "tipoEstadistica": "MAXPROVINCIASEGUNCONCATEGORIA",
+  "discriminante": {
+    "tipoDiscriminante": "CATEGORIA",
+    "valor": "Higiene"
+  },
+  "_class": "estadistica_maxProvCat"
+},
+{
+  "_id": {
+    "$oid": "699cec3138d00d2fbb86fb58"
+  },
+  "provincias": [
+    {
+      "provincia": "Buenos Aires",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    },
+    {
+      "provincia": "EXTERIOR",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    }
+  ],
+  "resultado": {
+    "provincia": "Buenos Aires",
+    "cantidad": {
+      "$numberLong": "1"
+    }
+  },
+  "tipoEstadistica": "MAXPROVINCIASEGUNCONCATEGORIA",
+  "discriminante": {
+    "tipoDiscriminante": "CATEGORIA",
+    "valor": "Comercio"
+  },
+  "_class": "estadistica_maxProvCat"
+},
+{
+  "_id": {
+    "$oid": "699cec3138d00d2fbb86fb5a"
+  },
+  "provincias": [
+    {
+      "provincia": "Ciudad Autonoma de Buenos Aires",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    }
+  ],
+  "resultado": {
+    "provincia": "Ciudad Autonoma de Buenos Aires",
+    "cantidad": {
+      "$numberLong": "1"
+    }
+  },
+  "tipoEstadistica": "MAXPROVINCIASEGUNCONCATEGORIA",
+  "discriminante": {
+    "tipoDiscriminante": "CATEGORIA",
+    "valor": "Vandalismo"
+  },
+  "_class": "estadistica_maxProvCat"
+},
+{
+  "_id": {
+    "$oid": "699cec3138d00d2fbb86fb5b"
+  },
+  "cantidadXHoras": [
+    {
+      "hora": 10,
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    }
+  ],
+  "resultado": {
+    "hora": 10,
+    "cantidad": {
+      "$numberLong": "1"
+    }
+  },
+  "tipoEstadistica": "MAXHORASEGUNCATEGORIA",
+  "discriminante": {
+    "tipoDiscriminante": "CATEGORIA",
+    "valor": "Automovilismo"
+  },
+  "_class": "estadistica_horaXCategoria"
+},
+{
+  "_id": {
+    "$oid": "699cec3138d00d2fbb86fb5d"
+  },
+  "resultado": {
+    "$numberLong": "4"
+  },
+  "cantidadTotal": {
+    "$numberLong": "7"
+  },
+  "tipoEstadistica": "CANTSOLICITUDESSPAM",
+  "discriminante": {
+    "tipoDiscriminante": "SIN",
+    "valor": ""
+  },
+  "_class": "estadistica_spam"
+},
+{
+  "_id": {
+    "$oid": "699cec3138d00d2fbb86fb26"
+  },
+  "provincias": [
+    {
+      "provincia": "EXTERIOR",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    }
+  ],
+  "resultado": {
+    "provincia": "EXTERIOR",
+    "cantidad": {
+      "$numberLong": "1"
+    }
+  },
+  "tipoEstadistica": "MAXPROVINCIADEUNACOLECCION",
+  "discriminante": {
+    "tipoDiscriminante": "COLECCION",
+    "valor": "Coleccion de prueba"
+  },
+  "_class": "estadistica_maxProv"
+},
+{
+  "_id": {
+    "$oid": "699cec3138d00d2fbb86fb28"
+  },
+  "provincias": [
+    {
+      "provincia": "Buenos Aires",
+      "cantidad": {
+        "$numberLong": "3"
+      }
+    },
+    {
+      "provincia": "EXTERIOR",
+      "cantidad": {
+        "$numberLong": "2"
+      }
+    },
+    {
+      "provincia": "La Pampa",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    },
+    {
+      "provincia": "La Rioja",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    },
+    {
+      "provincia": "Santa Cruz",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    },
+    {
+      "provincia": "Catamarca",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    },
+    {
+      "provincia": "Chubut",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    }
+  ],
+  "resultado": {
+    "provincia": "Buenos Aires",
+    "cantidad": {
+      "$numberLong": "3"
+    }
+  },
+  "tipoEstadistica": "MAXPROVINCIADEUNACOLECCION",
+  "discriminante": {
+    "tipoDiscriminante": "COLECCION",
+    "valor": "Todo"
+  },
+  "_class": "estadistica_maxProv"
+},
+{
+  "_id": {
+    "$oid": "699cec3138d00d2fbb86fb34"
+  },
+  "provincias": [
+    {
+      "provincia": "EXTERIOR",
+      "cantidad": {
+        "$numberLong": "2"
+      }
+    },
+    {
+      "provincia": "Catamarca",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    },
+    {
+      "provincia": "Rio Negro",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    },
+    {
+      "provincia": "Ciudad Autonoma de Buenos Aires",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    },
+    {
+      "provincia": "Entre Rios",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    }
+  ],
+  "resultado": {
+    "provincia": "EXTERIOR",
+    "cantidad": {
+      "$numberLong": "2"
+    }
+  },
+  "tipoEstadistica": "MAXPROVINCIASEGUNCONCATEGORIA",
+  "discriminante": {
+    "tipoDiscriminante": "CATEGORIA",
+    "valor": "Eventos"
+  },
+  "_class": "estadistica_maxProvCat"
+},
+{
+  "_id": {
+    "$oid": "699cec3138d00d2fbb86fb38"
+  },
+  "provincias": [
+    {
+      "provincia": "Ciudad Autonoma de Buenos Aires",
+      "cantidad": {
+        "$numberLong": "12"
+      }
+    },
+    {
+      "provincia": "Buenos Aires",
+      "cantidad": {
+        "$numberLong": "3"
+      }
+    },
+    {
+      "provincia": "Tucuman",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    }
+  ],
+  "resultado": {
+    "provincia": "Ciudad Autonoma de Buenos Aires",
+    "cantidad": {
+      "$numberLong": "12"
+    }
+  },
+  "tipoEstadistica": "MAXPROVINCIASEGUNCONCATEGORIA",
+  "discriminante": {
+    "tipoDiscriminante": "CATEGORIA",
+    "valor": "Tránsito"
+  },
+  "_class": "estadistica_maxProvCat"
+},
+{
+  "_id": {
+    "$oid": "699cec3138d00d2fbb86fb50"
+  },
+  "provincias": [
+    {
+      "provincia": "Ciudad Autonoma de Buenos Aires",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    }
+  ],
+  "resultado": {
+    "provincia": "Ciudad Autonoma de Buenos Aires",
+    "cantidad": {
+      "$numberLong": "1"
+    }
+  },
+  "tipoEstadistica": "MAXPROVINCIASEGUNCONCATEGORIA",
+  "discriminante": {
+    "tipoDiscriminante": "CATEGORIA",
+    "valor": "Comunidad"
+  },
+  "_class": "estadistica_maxProvCat"
+},
+{
+  "_id": {
+    "$oid": "699cec3138d00d2fbb86fb51"
+  },
+  "cantidadXHoras": [
+    {
+      "hora": 20,
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    }
+  ],
+  "resultado": {
+    "hora": 20,
+    "cantidad": {
+      "$numberLong": "1"
+    }
+  },
+  "tipoEstadistica": "MAXHORASEGUNCATEGORIA",
+  "discriminante": {
+    "tipoDiscriminante": "CATEGORIA",
+    "valor": "Mascotas"
+  },
+  "_class": "estadistica_horaXCategoria"
+},
+{
+  "_id": {
+    "$oid": "699cec3138d00d2fbb86fb53"
+  },
+  "cantidadXHoras": [
+    {
+      "hora": 20,
+      "cantidad": {
+        "$numberLong": "2"
+      }
+    }
+  ],
+  "resultado": {
+    "hora": 20,
+    "cantidad": {
+      "$numberLong": "2"
+    }
+  },
+  "tipoEstadistica": "MAXHORASEGUNCATEGORIA",
+  "discriminante": {
+    "tipoDiscriminante": "CATEGORIA",
+    "valor": "Ambiente"
+  },
+  "_class": "estadistica_horaXCategoria"
+},
+{
+  "_id": {
+    "$oid": "699cec3138d00d2fbb86fb55"
+  },
+  "cantidadXHoras": [
+    {
+      "hora": 20,
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    }
+  ],
+  "resultado": {
+    "hora": 20,
+    "cantidad": {
+      "$numberLong": "1"
+    }
+  },
+  "tipoEstadistica": "MAXHORASEGUNCATEGORIA",
+  "discriminante": {
+    "tipoDiscriminante": "CATEGORIA",
+    "valor": "Convivencia"
+  },
+  "_class": "estadistica_horaXCategoria"
+},
+{
+  "_id": {
+    "$oid": "699cec3138d00d2fbb86fb5c"
+  },
+  "provincias": [
+    {
+      "provincia": "EXTERIOR",
+      "cantidad": {
+        "$numberLong": "1"
+      }
+    }
+  ],
+  "resultado": {
+    "provincia": "EXTERIOR",
+    "cantidad": {
+      "$numberLong": "1"
+    }
+  },
+  "tipoEstadistica": "MAXPROVINCIASEGUNCONCATEGORIA",
+  "discriminante": {
+    "tipoDiscriminante": "CATEGORIA",
+    "valor": "Automovilismo"
+  },
+  "_class": "estadistica_maxProvCat"
+}]
